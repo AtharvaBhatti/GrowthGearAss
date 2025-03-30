@@ -62,7 +62,7 @@ uvicorn main:app --reload
 }
 ```
 
-### `POST /explain`
+### `GET /explain`
 **Description:** Provides an explanation for the generated SQL query.
 **Request Body:**
 ```json
@@ -92,16 +92,7 @@ uvicorn main:app --reload
 }
 ```
 
-## Testing the API
-Use **Postman** or **cURL** to test the API endpoints.
 
-Example using cURL:
-```bash
-curl -X 'POST' \
-  'http://127.0.0.1:8000/query' \
-  -H 'Content-Type: application/json' \
-  -d '{"topic": "Find all users"}'
-```
 
 ## License
 This project is open-source and available under the MIT License.
